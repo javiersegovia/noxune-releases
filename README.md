@@ -26,6 +26,15 @@ If you'd rather not use the terminal, open Noxune once, dismiss the warning, the
 
 You only do this once. Updates install from inside the app.
 
+#### Is it safe?
+
+The warning is about how Noxune is signed, not about what it does. Every update must be signed with the same certificate as the app you installed, or macOS refuses to install it.
+
+- **No account, no passwords.** Noxune never asks for your passwords and never stores them.
+- **Your work stays on your machine.** Projects, workspaces, chats and settings live in a local database. Noxune has no server that collects them; it only contacts this repository to check for updates. The agents you run talk to their own providers, as they do in your terminal.
+- **Error reports are off by default.** Nothing is shared unless you turn it on in Settings.
+- **Cookie import runs only when you ask.** You pick the browser profile and confirm. The browser's keychain key is used for that import and never saved, and imported cookies are stored encrypted with your macOS Keychain.
+
 #### Optional permissions
 
 - **Full Disk Access**, to import cookies from Safari or a browser macOS protects. Noxune tells you when it needs it and opens the right settings page. Add Noxune under **System Settings → Privacy & Security → Full Disk Access**, then restart it.
